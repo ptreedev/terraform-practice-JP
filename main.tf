@@ -33,7 +33,7 @@ resource "aws_instance" "app_server" {
   vpc_security_group_ids = ["sg-00d5a1d67232f43a4"]
   key_name               = "Terri-practice"
   user_data = templatefile("${path.module}/cloud-init.yaml.tmpl", {
-    instance_name = "terraform-practice"
+    instance_name = "terraform-practice-JP"
   })
   tags = {
     Name = "terraform-practice"
