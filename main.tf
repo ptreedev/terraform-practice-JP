@@ -36,6 +36,6 @@ resource "aws_instance" "app_server" {
     instance_name = "terraform-practice-JP"
   })
   tags = {
-    Name = "terraform-practice"
+    Name = "jp-terraform-practice"
   }
 }
